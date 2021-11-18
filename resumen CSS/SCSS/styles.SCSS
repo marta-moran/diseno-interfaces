@@ -1,0 +1,402 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+body {
+    font-family: Montserrat;
+}
+
+#encabezado {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#menu > ul li{
+    list-style-type: none;
+    background-color: rgb(255, 227, 203);
+    padding: 10px;
+}
+
+#menu > ul li:hover {
+    cursor: pointer;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > ul li {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+#menu a:visited{
+    color: rgb(66, 66, 66);
+}
+
+#menu a:link {
+    color: rgb(66, 66, 66);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#menu li a {
+    background-color: rgb(255, 227, 203);
+    text-decoration:none;
+    display:block;
+}
+
+#menu li a:hover {
+    background-color: rgba(245, 199, 209, 0.945);
+}
+
+#menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+#menu li:hover > ul {
+    display:block;
+}
+
+#menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+body {
+    font-size: 20px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+body section {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+body section p{
+    width: 50%;
+} 
+
+#uno {
+    display: flex;
+    flex-direction: row;
+
+}
+.elemento1 {
+    width: 200px;
+    align-content: space-around;
+    font-size: 20px;
+    border-radius: 5px 30px 45px 60px;
+    background-color: rgba(255, 218, 185, 0.507);
+    margin-left: 217px;
+    padding: 40px;
+
+}
+
+#dos {
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento2 img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 320px;
+    width: 40%;
+}
+
+#tres {
+display: flex;
+flex-direction: row;   
+}
+
+.elemento3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(248, 211, 236, 0.801);
+    margin-left: 221px;
+}
+
+#cuatro {
+    display: flex;
+    flex-direction: row;   
+    }
+
+.elemento4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(227, 199, 240); 
+    background-image: linear-gradient(to right, rgb(248, 243, 193) , rgb(203, 245, 255));
+    margin-left: 221px;
+    padding: 15px;
+    width: 22%;
+}
+
+#cinco {
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(197, 184, 255);
+    box-shadow: 10px 10px 5px grey;
+    margin-left: 221px;
+    padding: 15px;
+    width: 22%;
+}
+
+.definicion {
+    display: flex;
+    flex-direction: row; 
+}
+
+.ejemplo1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 220px;
+  }
+
+  
+.ejemplo1 > p {
+    width: 300px;
+    border: 1px solid;
+    padding: 2px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    
+        
+}
+
+.ejemplo2 {
+    display: flex;
+    flex-direction: row;
+    hyphens: auto;
+    margin-left: 220px;
+    
+}
+
+
+.ejemplo2 > p {
+    width: 300px;
+    border: 1px solid;
+    padding: 2px 5px;
+    
+}
+
+.ejemplo3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 220px; 
+}
+
+
+.ejemplo3 > p {
+    width: 300px;
+    border: 1px solid;
+    padding: 2px 5px;
+    word-break: break-all;
+}
+
+
+#siete {
+    display: flex;
+    flex-direction: row;
+}
+
+.ejemplo4 {
+    margin-left: 220px;
+}
+
+#rotaciony{
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#rotaciony1{
+    transform: rotate(20deg);
+    width: 100px;
+    height: 60px;
+    background-color: aquamarine;
+}
+
+#ocho {
+    display: flex;
+    flex-direction: row;
+}
+
+.ejemplo5 {
+    margin-left: 220px;;
+}
+
+#rotacionx {
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#rotacionx1 {
+    transform: rotateX(150deg);
+    width: 100px;
+    height: 60px;
+    background-color: blueviolet;
+}
+
+.ejemplo6 {
+    margin-left: 220px;
+    padding-left: 20px;
+    width: 100px;
+    height: 100px;
+    background: rgb(159, 224, 164);
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  .ejemplo6:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+
+  .ejemplo-a {
+    margin-left: 220px;
+    width: 100px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: rgb(250, 167, 243);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0%   {background-color: rgb(248, 200, 95);}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(227, 179, 236);}
+    100% {background-color: rgb(198, 255, 252);}
+  }
+
+#once {
+    display: flex;
+    flex-direction: row;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 220px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .ejemplo9 {
+      margin-left: 220px;
+  }
+
+  .ejemplo9 .button {
+    background-color: #acd0ff;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ejemplo9 .button:hover {
+    background-color: #427acf;
+  }
+
+  .ejemplo11 {
+      clear: both;
+      display: inline-block;
+      margin-left: 220px;
+  }
+
+  .ejemplo11 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .ejemplo11 a.active {
+    background-color: #427acf;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .ejemplo11 a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  .ejemplo14 {
+    padding: 20px 0px 20px 0px;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+    
+  }
+
+  .ejemplo15 {
+    margin-left: 220px;
+    border: 2px solid rgb(253, 158, 253);
+    padding: 20px; 
+    width: 400px;
+    resize: horizontal;
+    overflow: auto;
+  }
+
+  #footer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  }

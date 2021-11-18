@@ -1,0 +1,153 @@
+$color: rgb(46, 46, 46);
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+body {
+    font-family: Montserrat;
+    font-size: 18px;
+    padding: 20px 50px 20px 50px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: start;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 900px;
+    grid-template-columns: 350px 750px 1fr 1fr;
+    grid-template-areas: "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "footer" "footer" "footer"
+                        
+
+}
+
+#menu {
+    grid-area: "aside";
+}
+#contenido {
+    grid-area: "main";
+}
+
+#footer {
+    grid-area: "footer";
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+address > a {
+    text-decoration: none;
+    color : $color;
+    font-style: normal;  
+}
+
+address > a::before {
+    content: "♥";
+  }
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+ul > li a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.etiqueta {
+    font-size: 0.75rem;
+    color: red;
+}
+
+#contenido > section {
+    padding-bottom: 10px;
+}
+
+.lorem {
+    background-color: transparent;
+    border: solid;
+    border-color: rgb(99, 231, 150);
+
+}
+
+#iris {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+}
+
+a[href^="https"] {
+    background-color: rgb(255, 255, 130)
+}
+a[href*="periodicos"] {
+    background-color:rgb(255, 198, 124)
+}
+
+h2:active {
+    font-size: 30px;
+    color: rgb(255, 136, 0);
+    background-color: rgba(255, 218, 149, 0.808);
+
+}
+
+p:lang(fr){
+    color: cornflowerblue;
+}
+
+p:lang(es) {
+    color:crimson;
+}
+
+p:lang(it) {
+    color:rgb(32, 211, 91);
+}
+
+.dias-semana {
+    padding-top: 30px;
+}
+
+.dias-semana li:first-child {
+    color: rgb(0, 16, 233);
+  }
+
+.dias-semana li:nth-child(3n) {
+    color: rgb(255, 161, 232);
+  }
+
+  .dias-semana li:last-child {
+    color: lime;
+  }
+
+  #seis p::first-letter {
+      color: rgb(143, 48, 233);
+      font-size: 26px;
+      font-family: "Lobster";
+  }
+
+  #seis p::first-line{
+    font-style: italic;
+}
+
+#seis p::after {
+        content: ".";
+}
