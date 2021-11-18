@@ -1,0 +1,35 @@
+
+/* ejemplo de variable personalizada */
+:root {
+  --main-bg-color: rgb(236, 233, 47);;
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--main-bg-color);
+}
+.contenedor-flex.conwrap {
+  flex-wrap: wrap;
+  background-color:gray;
+}
+.contenedor-flex > div {
+  /* ejemplo de operaciones en css con calc() solo para nowrap*/
+  width: calc((100% / 7) - 30px);
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.contenedor-flex.conwrap > div {
+  width: 100px;
+}
+
+.contenedor-flex > div:nth-child(1){ background : #0000FF; }
+.contenedor-flex > div:nth-child(2){ background : #0055FF; }
+.contenedor-flex > div:nth-child(3){ background : #0099FF; }
+.contenedor-flex > div:nth-child(4){ background : #00AAFF; }
+.contenedor-flex > div:nth-child(5){ background : #00BBFF; }
+.contenedor-flex > div:nth-child(6){ background : #00CCFF; }
+.contenedor-flex > div:nth-child(7){ background : #00DDFF; }

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Lora;
+    src: url("../fonts/Lora-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: Lora;
+}
+
+header > div > img {
+    float: left;
+    width: 20%;
+}
+
+header > div > h1 {
+    width: 80%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+header > nav {
+    clear: left;
+    background-color: hsla(202, 75%, 77%, 0.205);
+    padding: 15px 0 15px 0;
+}
+
+header > nav > ul {
+    list-style: none;
+    text-align: center;
+    margin: auto; 
+    width: 50%;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    font-size: 1.2rem;
+}
+
+header > nav > ul > li > a {
+    padding: 12px 12px 12px 12px;
+    height: 100%;
+    text-decoration: none;
+}
+
+header > nav > ul > li:hover {
+    background-color: #ffe5ff9c;
+}
+
+main {
+    clear: left;
+    width: 80%;
+    margin: auto;
+}
+
+main > div {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#main-left-content {
+    text-align: justify;
+}
+
+#main-right-content {
+    padding-left: 80px;
+}
+
+#teachers {
+    list-style-type: circle;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 720px) {
+    main > div {
+        float: left;
+        width: 50%;
+    }
+    
+    footer {
+        clear: left;
+    }
+}

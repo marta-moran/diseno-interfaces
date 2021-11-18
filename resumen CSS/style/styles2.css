@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+body {
+    font-family: Montserrat;
+    font-size: 18px;
+    padding: 20px 50px 20px 50px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: start;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 1fr;
+    grid-template-columns: 350px 750px 1fr 1fr;
+    grid-template-areas: "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                         "aside" "aside" "main" "main" "main"
+                        
+
+}
+
+#menu {
+    grid-area: "aside";
+}
+#contenido {
+    grid-area: "main";
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+ul > li a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.etiqueta {
+    font-size: 0.75rem;
+    color: red;
+}
+
+#contenido > section {
+    padding-bottom: 10px;
+}
+
+.lorem {
+    background-color: transparent;
+    border: solid;
+    border-color: rgb(99, 231, 150);
+
+}
+
+#iris {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+}
+
+a[href^="https"] {
+    background-color: rgb(255, 255, 130)
+}
+a[href*="periodicos"] {
+    background-color:rgb(255, 198, 124)
+}
+
+h2:active {
+    font-size: 30px;
+    color: rgb(255, 136, 0);
+    background-color: rgba(255, 218, 149, 0.808);
+
+}
+
+p:lang(fr){
+    color: cornflowerblue;
+}
+
+p:lang(es) {
+    color:crimson;
+}
+
+p:lang(it) {
+    color:rgb(32, 211, 91);
+}
+
+.dias-semana {
+    padding-top: 30px;
+}
+
+.dias-semana li:first-child {
+    color: rgb(0, 16, 233);
+  }
+
+.dias-semana li:nth-child(3n) {
+    color: rgb(255, 161, 232);
+  }
+
+  .dias-semana li:last-child {
+    color: lime;
+  }
