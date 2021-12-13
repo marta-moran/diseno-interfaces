@@ -38,6 +38,7 @@ h1 {
   grid-area: "menu";
   max-width: 100px;
   font-size: 12px;
+  font-weight: bold;
 }
 
 .vertical-menu ul {
@@ -97,17 +98,17 @@ address > a::before {
 @media screen and (min-width: 400px) {
 
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 1.5px;
   }
   
 #grid-container {
   display: grid;
-  grid-template-rows: 60px 400px 400px 200px;
+  grid-template-rows: 60px 400px 400px;
   grid-template-columns: 400px 150px;
   /*justify-content: center;*/
   grid-template-areas: "encabezado" menu" 
@@ -125,30 +126,38 @@ address > a::before {
 .vertical-menu {
   grid-area: "menu";
   font-size: 15px;
+  margin-top: 20px;
 }
 
 #contenido-principal {
   grid-area: "main";
 }
 
+#contenido-principal {
+  margin: 25px 160px 0px 0px;
+  width: 100%;
+}
+
+
 }
 
 @media screen and (min-width: 600px) {
 
   body {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 1.5px;
   }
 
   #grid-container {
     display: grid;
     grid-template-areas: "header header header"
-                          "nav   main   main"
                           "nav   main    main"
+                          "nav   main    main"
+                          "footer   footer  footer"
                           ;
   }
 
@@ -164,6 +173,10 @@ address > a::before {
   main {
     grid-area: main;
   }
+
+  #footer {
+    grid-area: footer;
+  }
   
   .logo-menu {
     display: none;
@@ -176,10 +189,15 @@ address > a::before {
   .vertical-menu {
     font-size: 20px;
     max-width:  200px;
+    margin-top: 20px;
   }
 
   #header {
     margin-bottom: 20px;
+  }
+
+  #contenido-principal {
+    margin: 25px 160px 0px -120px;
   }
 
 }
