@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+
+
+body {
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-rows: 60px 400px 400px 0px;
+  grid-template-columns: 280px 150px;
+  /*justify-content: center;*/
+  grid-template-areas: "encabezado" menu" 
+                        "main"     "main" 
+                        "main"     "main" 
+                        "main"    "main"                  
+
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+#encabezado {
+  grid-area: "encabezado";
+
+}
+
+.logo-menu {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px; 
+}
+
+.vertical-menu {
+  grid-area: "menu";
+  max-width: 100px;
+  font-size: 12px;
+}
+
+.vertical-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-menu > li {
+  text-align: center;
+}
+
+.vertical-menu > ul, li {
+  list-style: none;
+  margin: 30;
+}
+
+.vertical-menu li > ul {
+  display: none;
+}
+
+.vertical-menu li:hover > ul {
+  display: block;
+}
+  
+.vertical-menu a {
+  color: black; 
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
+}
+  
+.vertical-menu a:hover {
+background-color: rgba(230, 196, 230, 0.61);
+
+}
+
+#contenido-principal {
+  grid-area: "main";
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+}
+
+address > a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+font-style: normal;
+    
+}
+
+address > a::before {
+  content: "♥";
+}
+
+@media screen and (min-width: 400px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+  
+#grid-container {
+  display: grid;
+  grid-template-rows: 60px 400px 400px 200px;
+  grid-template-columns: 400px 150px;
+  /*justify-content: center;*/
+  grid-template-areas: "encabezado" menu" 
+                        "main"     "main" 
+                        "main"     "main" 
+                        "main"    "main"                  
+
+}
+
+#encabezado {
+  grid-area: "encabezado";
+
+}
+
+.vertical-menu {
+  grid-area: "menu";
+  font-size: 15px;
+}
+
+#contenido-principal {
+  grid-area: "main";
+}
+
+}
+
+@media screen and (min-width: 600px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  #grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                          "nav   main   main"
+                          "nav   main    main"
+                          ;
+  }
+
+  header {
+    grid-area: header;
+
+  }
+
+  nav {
+    grid-area: nav ;
+  }
+
+  main {
+    grid-area: main;
+  }
+  
+  .logo-menu {
+    display: none;
+  }
+
+  .vertical-menu li > ul {
+    display: block;
+  }
+
+  .vertical-menu {
+    font-size: 20px;
+    max-width:  200px;
+  }
+
+  #header {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+
+  body {
+    font-size: 18px;
+    margin: 10px 100px 30px 80px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+
+  #grid-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                          "nav   main   main"
+                          "nav   main    main"
+                          ;
+  }
+
+  header {
+    grid-area: header;
+
+  }
+
+  nav {
+    grid-area: nav ;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .logo-menu {
+    display: none;
+  }
+
+  .vertical-menu li > ul {
+    display: block;
+  }
+
+  .vertical-menu {
+    font-size: 20px;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+
+  #contenido-principal {
+    margin: 25px 160px 0px -120px;
+  }
+
+}
