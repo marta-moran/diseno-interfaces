@@ -95,6 +95,81 @@ address > a::before {
   content: "♥";
 }
 
+ul {
+  list-style: none;
+}
+
+.carrousel{
+  margin: 60px 130px 60px 55px;
+  width: 70%;
+  max-width: 120em;
+  background: #e3edf7;
+  border-radius: 20px 20px 20px 20px;
+  padding: 2em;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  
+}
+
+.carrousel .grande {
+  width: 90%;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.carrousel .img {
+  width: 42%;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 2em 17px 2em 20px;
+  min-height: 5vh;
+}
+
+.carrousel .botones-deslizar {
+  width: 100%;
+  padding: .4em;
+  margin: 1em 0 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  border-radius: 50px 50px 50px 50px;
+  background: #d1ddeb;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.carrousel .punto.activo {
+  background-color: rgb(198, 233, 255);
+  
+}
+
+.lienzo {
+  display: flex;
+  justify-content: space-around
+}
+
+#canvas01 {
+  width: 90%;
+  border: 1px solid black;
+}
+
+
 @media screen and (min-width: 400px) {
 
   body {
@@ -200,7 +275,12 @@ address > a::before {
     margin: 25px 160px 0px -120px;
   }
 
+  .carrousel {
+    margin: 60px 130px 60px 41px;
 }
+
+}
+
 
 @media screen and (min-width: 950px) {
 
@@ -253,73 +333,16 @@ address > a::before {
     margin: 25px 160px 0px -120px;
   }
 
-  ul {
-    list-style: none;
-}
-body {
-    overflow: hidden;
-}
+  .carrousel {
+    margin: 60px 130px 60px 120px;
+  }
 
-
-.carrousel{
-    margin: 60px 130px 60px 300px;
-    width: 70%;
-    max-width: 120em;
-    background: #e3edf7;
-    border-radius: 20px 20px 20px 20px;
-    padding: 2em;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-    
-}
-
-.carrousel .grande {
-    width: 90%;
-    background: #e3edf7;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    transition: all .5s ease;
-}
-
-.carrousel .img {
-    width: 42%;
-    background: #e3edf7;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-    padding: 2em;
-    min-height: 5vh;
-}
-
-.carrousel .botones-deslizar {
-    width: 100%;
-    padding: .4em;
-    margin: 1em 0 0;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrousel .punto {
-    width: 2em;
-    height: 2em;
-    margin: 1em 1em 0;
-    border-radius: 50px 50px 50px 50px;
-    background: #d1ddeb;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.carrousel .punto.activo {
-    background-color: rgb(198, 233, 255);
-    
-}
-
+  .carrousel .img {
+    padding-left: 4em;
+  }
+  
+  #canvas01 {
+    width: 500px;
+    height: 300px;
+  }
 }

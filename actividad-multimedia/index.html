@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script defer src="js/carrousel.js" ></script>
+    <script defer src="js/carrousel.js"></script>
+    <script defer src="js/canvas.js"></script>
+
     <title>Elementos multimedia</title>
 </head>
-<body>
+<body onload="JavaScript:dibujar();">
     <div id="grid-container">
         <header id="encabezado">
             <h1>Elementos multimedia</h1>
@@ -31,11 +33,12 @@
         <main id="contenido-principal">
             <section class="mapas-bits">
                 <h2>Mapas de bits</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Un mapa de bits es una <b>matriz de bits</b> que especifica el color de cada píxel de una matriz rectangular de píxeles. El número de bits asignado a un píxel individual determina el número de colores que se pueden asignar a dicho píxel.<br><br>
+                    A las imágenes en mapa de bits se las suele definir por su altura y anchura (en píxeles) y por su profundidad de color (en bits por píxel), que determina el número de colores distintos que se pueden almacenar en cada punto individual, y por lo tanto, en gran medida, la calidad del color de la imagen.</p>
                 <div class="carrousel">
                     <div class="grande">
-                        <img src="img/mapabits.jpg" alt="imagen" class="img">
-                        <img src="img/mapabits2.jpg"  alt="imagen" class="img">
+                        <img src="img/mapabits.jpg" alt="imagen mapa bits" class="img">
+                        <img src="img/mapabits2.jpg"  alt="imagen mapa bits" class="img">
                     </div>
                     <ul class="botones-deslizar">
                         <li class="punto activo"></li>
@@ -45,23 +48,42 @@
             </section>
             <section class="img-vectoriales">
                 <h2>Imágenes vectoriales</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Las imágenes vectoriales son representaciones de <b>entidades geométricas</b> (círculos, rectángulos o segmentos). Están representados por fórmulas matemáticas (rectángulo: 2 puntos, círculo: centro y radio, curva: varios puntos y una ecuación).<br><br>
+                    El procesador traduce estas formas en información que la tarjeta gráfica puede interpretar.</p>
+                <div class="carrousel">
+                    <div class="grande">
+                        <img src="img/cat.svg"  alt="imagen vectorial" class="img">
+                        <img src="img/tigre.svg"  alt="imagen vectorial" class="img">
+                    </div>
+                    <ul class="botones-deslizar">
+                        <li class="punto activo"></li>
+                        <li class="punto"></li>
+                    </ul>
+                </div>
             </section>
             <section class="animacion">
                 <h2>Animación @keyframe</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Esta regla permite controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de <b>keyframes</b> (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación.<br><br>
+                    Esto aporta un control más específico sobre los pasos intermedios de la secuencia de animación que se obtiene al dejar que el navegador maneje todo automáticamente</p>
             </section>
             <section class="canvas">
                 <h2>Canvas imagen 2D</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Permite la generación de gráficos dinámicamente por medio del scripting. Entre otras cosas, permite la renderización interpretada dinámica de gráficos 2D y mapas de bits, así como animaciones con estos gráficos. Se utiliza la etiqueta <b>&ltcanvas&gt</b>.</p>
+                <div class="lienzo">
+                    <canvas id="canvas01">Tu navegador no puede mostrar este contenido.</canvas>    
+                </div>
             </section>
             <section class="audio">
                 <h2>Audio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Se puede <b>incrustar audio</b> en una página de HTML5. El formato más extendido es MP3, pero hay más como ogg, Real Audio, Windows Media Audio, wav o vfq. Se utiliza la etiqueta <b>&ltaudio&gt</b>.</p>
+                <audio class="clip-audio"></audio>
             </section>
             <section class="video">
                 <h2>Vídeo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corporis blanditiis molestias voluptas ullam facilis quo dolorum vel eligendi, dolore laborum ipsum tempora amet temporibus atque vitae sapiente enim eaque!</p>
+                <p>Se puede <b>incrustar audio</b> en una página HTML5. El formato más extendido es MP4, pero existen otros como swf, flv, f4v, ogg, ogv, mkv o webm. Se utiliza la etiqueta <b>&ltvideo&gt</b>.</p>
+                <div class="div-video">
+                    <video class="clip-video" src="video/video.mp4" autoplay muted loop></video>
+                </div>
             </section>
         </main>
     </div>
