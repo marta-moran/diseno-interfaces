@@ -16,7 +16,7 @@
         <header id="encabezado">
             <h1>Elementos multimedia</h1>
         </header>
-        <nav class="vertical-menu">
+        <nav class="vertical-menu" data-animation="to-left">
             <ul>
                 <li><a href="#" class="active"><img class="logo-menu"src="https://cdn.icon-icons.com/icons2/1993/PNG/512/burger_line_list_menu_nav_navigation_option_icon_123231.png" alt="menu"></a>
                     <ul>
@@ -65,6 +65,13 @@
                 <h2>Animación @keyframe</h2>
                 <p>Esta regla permite controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de <b>keyframes</b> (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación.<br><br>
                     Esto aporta un control más específico sobre los pasos intermedios de la secuencia de animación que se obtiene al dejar que el navegador maneje todo automáticamente</p>
+                    <div class="animacion-circulos">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class = "animacion-foto">
+                        <img class = "img-animada" src = "img/margaritas.jpg" alt = "imagen de margaritas">
+                    </div>
             </section>
             <section class="canvas">
                 <h2>Canvas imagen 2D</h2>
@@ -76,7 +83,9 @@
             <section class="audio">
                 <h2>Audio</h2>
                 <p>Se puede <b>incrustar audio</b> en una página de HTML5. El formato más extendido es MP3, pero hay más como ogg, Real Audio, Windows Media Audio, wav o vfq. Se utiliza la etiqueta <b>&ltaudio&gt</b>.</p>
-                <audio class="clip-audio"></audio>
+                <div class = div-audio>
+                    <audio class="clip-audio" src="audio/audio.mp3"controls></audio>
+                </div>    
             </section>
             <section class="video">
                 <h2>Vídeo</h2>

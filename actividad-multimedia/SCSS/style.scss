@@ -1,3 +1,19 @@
+//variables, mixin y funciones de SASS
+$mySizeMovil : 12px;
+$mySizeTablet: 16px;
+$selectColor: rgb(255, 140, 230);
+
+@mixin neo {
+	background: #d1ddeb;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+@mixin flex-margen {
+	display: flex;
+	justify-content: center ;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 @font-face {
 	font-family: "Montserrat";
@@ -6,7 +22,7 @@
 
 body {
 	font-family: Montserrat;
-	font-size: 12px;
+	font-size: $mySizeMovil;
 }
 #grid-container {
 	display: grid;
@@ -58,7 +74,7 @@ h1 {
 		padding: 12px;
 		text-decoration: none;
 		&:hover {
-			background-color: rgba(230, 196, 230, 0.61);
+			color: $selectColor;
 		}
 	}
 }
@@ -90,23 +106,20 @@ ul {
 	margin: 60px 130px 60px 55px;
 	width: 70%;
 	max-width: 120em;
-	background: #e3edf7;
+	@include neo;
 	border-radius: 20px 20px 20px 20px;
 	padding: 2em;
-	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 	.grande {
 		width: 90%;
-		background: #e3edf7;
-		box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
+		@include neo;
 	}
 	.img {
 		width: 42%;
-		background: #e3edf7;
-		box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+		@include neo;
 		padding: 2em 17px 2em 20px;
 		min-height: 5vh;
 	}
@@ -124,16 +137,14 @@ ul {
 		height: 2em;
 		margin: 1em 1em 0;
 		border-radius: 50px 50px 50px 50px;
-		background: #d1ddeb;
-		box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+		@include neo;
 	}
 	.punto.activo {
 		background-color: rgb(198, 233, 255);
 	}
 }
 .lienzo {
-	display: flex;
-	justify-content: space-around;
+	margin-left: 10px;
 }
 #canvas01 {
 	width: 500px;
@@ -142,18 +153,133 @@ ul {
 }
 
 .div-video {
-	display: flex;
-	justify-content: center ;
-	margin-top: 30px;
+	@include flex-margen ;
 }
 
 .clip-video {
 	width: 80%;
 }
 
+.div-audio {
+	@include flex-margen;
+}
+
+.animacion-foto {
+	@include flex-margen;
+}
+
+.img-animada {
+	animation: slide-in 2s ease infinite;
+}
+
+.animacion-circulos {
+	margin: 120px 0px 120px 190px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: red;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	align-items: center;
+	transform-origin: center;
+	animation: rotate 2s ease infinite;
+}
+
+.animacion-circulos:before > .circulo:before {
+	box-sizing: border-box;
+}
+
+.circulo {
+	background-color: rgb(255, 94, 94);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.circulo:nth-child(1) {
+	left:-100px;
+	animation: slideleft 2s ease forwards infinite;
+}
+
+.circulo:nth-child(2) {
+	left:100px;
+	top:-40px;
+	animation: slideright 2s ease forwards infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50%{
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes slideleft {
+	0% {
+		background-color: rgb(255, 209, 123);
+		transform: translateX(0px);
+	}
+
+	25%{
+		background-color: rgb(255, 193, 255);
+		transform: translateX(-100px);
+	}
+
+	50%{
+		background-color: rgb(158, 202, 252);
+		transform: translateX(0px);
+	}
+
+	100%{
+		background-color: rgb(125, 80, 156);
+	}
+}
+
+@keyframes slideright {
+	0% {
+		background-color: rgb(210, 148, 235);
+		
+		transform: translateX(0px);
+	}
+
+	25%{
+		background-color: rgb(174, 250, 151);
+		transform: translateX(100px);
+	}
+
+	50%{
+		background-color: rgb(255, 255, 133);
+		transform: translateX(0px);
+	}
+
+	100%{
+		background-color: rgb(122, 153, 255);
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(900px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+
 @media screen and (min-width: 400px) {
 	body {
-		font-size: 16px;
+		font-size: $mySizeTablet;
 	}
 	h1 {
 		font-size: 30px;
@@ -181,7 +307,7 @@ ul {
 }
 @media screen and (min-width: 600px) {
 	body {
-		font-size: 17px;
+		font-size: $mySizeTablet;
 	}
 	h1 {
 		font-size: 35px;
@@ -280,5 +406,14 @@ ul {
 
 	.clip-video {
 		width:30% ;
+	}
+
+	.lienzo {
+		@include flex-margen;
+	}
+	
+
+	.animacion-circulos {
+		margin: 120px 500px 120px 550px;
 	}
 }
