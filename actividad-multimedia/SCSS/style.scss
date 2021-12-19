@@ -173,7 +173,7 @@ ul {
 }
 
 .animacion-circulos {
-	margin: 120px 0px 120px 190px;
+	margin: 180px 0px 230px 190px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -266,6 +266,7 @@ ul {
 	}
 }
 
+
 @keyframes slide-in {
 	from {
 		transform: translateX(900px);
@@ -274,6 +275,29 @@ ul {
 	to {
 		transform: translateX(0px);
 	}
+}
+
+.img-styles1 {
+	border-radius: 8px;
+	
+}
+
+.img-styles1:hover {
+	transform: scaleX(-1);
+}
+
+.img-styles2 {
+	border-radius: 8px;
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.container-estilos:hover .img-styles2 {
+	opacity: 0.4;
 }
 
 
@@ -362,7 +386,12 @@ ul {
 	}
 	#grid-container {
 		display: grid;
-		grid-template-areas: "header header header" "nav   main   main" "nav   main    main";
+		grid-template-areas: "header header header" 
+							"nav   main   main" 
+							"nav   main    main"
+							"nav   main   main" 
+							"nav   main    main"
+							"footer footer footer";
 	}
 	header {
 		grid-area: header;
@@ -373,6 +402,14 @@ ul {
 	main {
 		grid-area: main;
 	}
+
+	footer {
+		grid-area: footer;
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.logo-menu {
 		display: none;
 	}
@@ -411,9 +448,20 @@ ul {
 	.lienzo {
 		@include flex-margen;
 	}
+
+	.img-animada {
+		width: 25%;
+	}
 	
 
 	.animacion-circulos {
 		margin: 120px 500px 120px 550px;
 	}
+
+	.estilos-img {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
 }

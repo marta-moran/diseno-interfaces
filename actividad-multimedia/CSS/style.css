@@ -233,7 +233,7 @@ ul {
 }
 
 .animacion-circulos {
-  margin: 120px 0px 120px 190px;
+  margin: 180px 0px 230px 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,6 +420,31 @@ ul {
   }
 }
 
+.img-styles1 {
+  border-radius: 8px;
+}
+
+.img-styles1:hover {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.img-styles2 {
+  border-radius: 8px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.container-estilos:hover .img-styles2 {
+  opacity: 0.4;
+}
+
 @media screen and (min-width: 400px) {
   body {
     font-size: 16px;
@@ -523,7 +548,7 @@ ul {
   #grid-container {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header" "nav   main   main" "nav   main    main";
+        grid-template-areas: "header header header"  "nav   main   main"  "nav   main    main" "nav   main   main"  "nav   main    main" "footer footer footer";
   }
   header {
     -ms-grid-row: 1;
@@ -533,16 +558,29 @@ ul {
   }
   nav {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 4;
     -ms-grid-column: 1;
     grid-area: nav;
   }
   main {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 4;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: main;
+  }
+  footer {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .logo-menu {
     display: none;
@@ -584,8 +622,19 @@ ul {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .img-animada {
+    width: 25%;
+  }
   .animacion-circulos {
     margin: 120px 500px 120px 550px;
+  }
+  .estilos-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=style.css.map */
