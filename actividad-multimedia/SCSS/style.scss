@@ -329,6 +329,11 @@ ul {
 		width: 100%;
 	}
 }
+
+footer {
+	display: none;
+}
+
 @media screen and (min-width: 600px) {
 	body {
 		font-size: $mySizeTablet;
