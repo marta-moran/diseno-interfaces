@@ -1,7 +1,11 @@
 //variables, mixin y funciones de SASS
 $mySizeMovil : 12px;
 $mySizeTablet: 16px;
+
+
 $selectColor: rgb(255, 140, 230);
+$colorFooter: rgb(46, 46, 46);
+$colorLinks: rgb(19, 19, 19);
 
 @mixin neo {
 	background: #d1ddeb;
@@ -14,6 +18,18 @@ $selectColor: rgb(255, 140, 230);
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+@mixin botones {
+	@include neo;
+	border-radius: 30px;
+
+}
+
+@mixin link {
+	color: $colorLinks;	
+	text-decoration: none;
+}
+
 
 @font-face {
 	font-family: "Montserrat";
@@ -69,7 +85,7 @@ h1 {
 		}
 	}
 	a {
-		color: black;
+		color: $colorLinks;
 		display: block;
 		padding: 12px;
 		text-decoration: none;
@@ -92,7 +108,7 @@ li {
 address {
 	>a {
 		text-decoration: none;
-		color: rgb(46, 46, 46);
+		color: $colorFooter;
 		font-style: normal;
 		&::before {
 			content: "♥";
@@ -177,7 +193,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	background-color: red;
+	background-color: rgb(255, 59, 59) ;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -269,7 +285,7 @@ ul {
 
 @keyframes slide-in {
 	from {
-		transform: translateX(900px);
+		transform: translateX(700px);
 		opacity: 0;
 	}
 	to {
@@ -466,7 +482,44 @@ footer {
 	.estilos-img {
 		display: flex;
 		justify-content: space-between;
+		margin-left: 50px;
 		
+	}
+
+	.seccion-botones {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+
+	.botones {
+		position: relative;
+		width: 18%;
+		margin-top: 20px;
+		@include botones;
+		padding: 20px 10px 20px 10px;
+		
+	}
+
+	.box > a {
+		font-size: 20px;
+		@include link;
+		padding: 20px;
+
+	}
+
+	.box2 > a {
+		font-size: 20px;
+		margin-left: 35px;
+		@include link;
+		padding: 20px;
+	}
+
+	.botones a:hover {
+		font-weight: bolder;
+		color: $selectColor;
+
 	}
 
 }

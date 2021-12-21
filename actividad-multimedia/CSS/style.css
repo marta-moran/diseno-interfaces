@@ -64,7 +64,7 @@ h1 {
 }
 
 .vertical-menu a {
-  color: black;
+  color: #131313;
   display: block;
   padding: 12px;
   text-decoration: none;
@@ -243,7 +243,7 @@ ul {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: red;
+  background-color: #ff3b3b;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -398,8 +398,8 @@ ul {
 
 @-webkit-keyframes slide-in {
   from {
-    -webkit-transform: translateX(900px);
-            transform: translateX(900px);
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
     opacity: 0;
   }
   to {
@@ -410,8 +410,8 @@ ul {
 
 @keyframes slide-in {
   from {
-    -webkit-transform: translateX(900px);
-            transform: translateX(900px);
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
     opacity: 0;
   }
   to {
@@ -639,6 +639,47 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-left: 50px;
+  }
+  .seccion-botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+  }
+  .botones {
+    position: relative;
+    width: 18%;
+    margin-top: 20px;
+    background: #d1ddeb;
+    -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    padding: 20px 10px 20px 10px;
+  }
+  .box > a {
+    font-size: 20px;
+    color: #131313;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .box2 > a {
+    font-size: 20px;
+    margin-left: 35px;
+    color: #131313;
+    text-decoration: none;
+    padding: 20px;
+  }
+  .botones a:hover {
+    font-weight: bolder;
+    color: #ff8ce6;
   }
 }
 /*# sourceMappingURL=style.css.map */
