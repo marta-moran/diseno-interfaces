@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Actividad 5</title>
+    <style>
+        body {
+            margin-top: 100px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">Mayor de edad </label>
+        <input type="checkbox" id="edad">
+        <label for="">Socio </label>
+        <input type="checkbox" id="socio">
+        <label for="">Tarjeta regalo </label>
+        <input type="checkbox" id="regalo">
+    </form>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <td class="fila1">Debe ir acompañado de un adulto</td>
+        </tr>
+        <tr>
+            <td class="fila2">No puede traer invitados</td>
+        </tr>
+        <tr>
+            <td class="fila3">Abonará 5% de las tasas</td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function () {
+            $('#edad').on('click', function () {
+                if ($(this).is(':checked')) {
+                    $('.fila1').fadeOut();
+                } else {
+                    $('.fila1').fadeIn();
+                }
+            });
+            $('#socio').on('click', function () {
+                if ($(this).is(':checked')) {
+                    $('.fila2').fadeOut();
+                } else {
+                    $('.fila2').fadeIn();
+                }
+            });
+            $('#regalo').on('click', function () {
+                if ($(this).is(':checked')) {
+                    $('.fila3').fadeOut();
+                } else {
+                    $('.fila3').fadeIn();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

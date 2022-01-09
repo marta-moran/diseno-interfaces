@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Actividad 1</h1>
+    <a href="https://github.com/">Marta Morán</a><br><br>
+    <button id="ocultar">Ocultar</button>
+    
+    <script>
+        $(document).ready(function(){
+            $("#ocultar").click(function(){
+                $("a").hide(5000);
+                $("a").show(3000);
+                $("a").toggle(200);
+                $("a").toggle(2000);
+                alert("He tardado dos segundos en mostrarme");
+            });
+
+        });
+    </script>
+</body>
+</html>

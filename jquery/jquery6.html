@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Actividad 6</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">Diseño de Interfaces </label>
+        <input type="text" class="notas"><br><br>
+
+        <label for="">Empresa e Iniciativa Emprendedora </label>
+        <input type="text" class="notas"><br><br>
+
+        <label for="">Desarrollo Web en Entorno Servidor </label>
+        <input type="text" class="notas"><br><br>
+
+        <label for="">Despliegue de Aplicaciones Web</label>
+        <input type="text" class="notas"><br><br>
+
+        <label for="">Inglés</label>
+        <input type="text" class="notas"><br><br>
+
+        <label for="">Desarrollo Web en Entorno Cliente</label>
+        <input type="text" class="notas"><br><br>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            //Si el foco se centra en esta caja el fondo se pone rojo
+            $(".notas").focus(function () {
+                $(this).css("color", "red");
+            });
+            //En caso de que el foco no se centre en esta caja el fondo se pone verde
+            $(".notas").blur(function () {
+                $(this).css("color", "green");
+            });
+        });
+    </script>
+</body>
+
+</html>

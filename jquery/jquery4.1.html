@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4.1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .tabla {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Form: </p>
+        <label for="campo1">Check 1:</label>
+        <input type="checkbox" id="campo1">
+    <p>Example table 1:</p>
+    <table border="1" class = "tabla">
+        <tr>
+            <td class="lista1">Manufacturer row One here</td>
+        </tr>
+        <tr>
+            <td class="lista2">Manufacturer row Two here</td>
+        </tr>
+    </table>
+
+    <script>
+        //Se oculta la primera fila de la tabla al pulsar el checkbox
+        $(document).ready(function(){
+            $('#campo1').click(function(){
+                if ($(this).is(":checked")){
+                    $('.lista1').hide();
+                } else {
+                    $('.lista1').show();
+                }
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Actividad 7</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="selected">
+        <span>Esto son unos divs</span><br><br>
+    </div>
+    <div>
+        <span>Para comprobar cómo funciona</span><br><br>
+    </div>
+    <div class="selected">
+        <span>el método children()</span><br><br>
+    </div>
+    <div>
+        <span>de jquery</span><br><br>
+    </div>
+    <div>
+        <span>A ver..</span><br><br>
+    </div>
+    <div class="selected">
+        <span>¡Se pone el fondo amarillo!</span><br><br>
+    </div>
+    <script>
+        $(document).ready(function(){
+            //Se muestra solamente los div de la clase selected en amarillo
+            $(".selected").children().css({'background-color':'rgb(255, 255, 149)'});
+        })
+    </script>   
+</body>
+</html>
