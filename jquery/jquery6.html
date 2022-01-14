@@ -35,16 +35,16 @@
     </form>
 
     <script>
-        $(document).ready(function () {
-            //Si el foco se centra en esta caja el fondo se pone rojo
+
+            //Si el foco se centra en esta caja se pone el color de las letras rojo
             $(".notas").focus(function () {
                 $(this).css("color", "red");
             });
-            //En caso de que el foco no se centre en esta caja el fondo se pone verde
+            //En caso de que el foco no se centre en esta caja se pone el color de las letras en rojo
             $(".notas").blur(function () {
                 $(this).css("color", "green");
             });
-        });
+            
     </script>
 </body>
 
