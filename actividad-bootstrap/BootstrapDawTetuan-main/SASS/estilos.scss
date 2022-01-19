@@ -1,0 +1,68 @@
+@import "./imports/_nav.scss";
+@import "./imports/_header.scss";
+@import "./imports/_footer.scss";
+@import "./imports/_colores.scss";
+@import "./imports/estilos_colores.scss";
+
+@font-face{
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+.main{
+  display: grid;
+  grid-template-areas: "ej1" "ej2" "ej3" "ej5" "ej6" "ej7";
+
+  .ej1{
+    grid-area: ej1;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+  .ej2{
+    grid-area: ej2;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+  .ej3{
+    grid-area: ej3;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+  .ej5{
+    grid-area: ej5;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+  .ej6{
+    grid-area: ej6;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+
+  .ej7{
+    grid-area: ej7;
+    margin: 5%;
+    padding: 5% 0;
+    background-color: $main-color;
+  }
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Lato';
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+

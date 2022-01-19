@@ -1,0 +1,29 @@
+@import "_colores.scss";
+footer{
+    clear: both;
+    text-align: center;
+    background-color: $main-3color;
+    color: $mainContra2-color;
+    font-family: 'DancingScript';
+    font-size: 1rem;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 'dato dato dato dato dato dato dato sello';
+  
+    address{
+      font-size: 1.5rem;
+    }
+    .datos{
+      grid-area: dato;
+      padding-left: 20%;
+    }
+    .sello{
+      grid-area: sello;
+      margin: auto;
+    }
+  }
+  @font-face{
+    font-family: 'DancingScript';
+    font-weight: 400;
+    src: url(../fonts/DancingScript-Regular.ttf);
+  }

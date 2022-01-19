@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cabecera principal del Grupa A 1</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="./index.html"><i class="fa fa-home"></i></a>
+            <a href="index.html">Index</a>
+            <a href="./index.html"></a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()"> grupoA1
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#ej1">Ejercicio 1</a>
+                    <a href="#ej2">Ejercicio 2</a>
+                    <a href="#ej3">Ejercicio 3</a>
+                </div>
+            </div>
+            <a href="grupoA2.html">GrupoA2</a>
+            <a href="grupoA3.html">GrupoA3</a>
+            <a href="grupoB1.html">GrupoB1</a>
+            <a href="grupoB2.html">GrupoB2</a>
+        </div>
+    </nav>
+    <div class="main">
+        <main>
+            <div class="ej1">
+                <section id="ej1">
+                    <!-- Marta Morán -->
+                    <h2>Tipografía en Bootstrap 5</h2><br><br>
+                    <h3>Configuración por defecto de Bootstrap 5</h3>
+                    &#10024;<b>Font-size</b>: 16px.<br><br>
+                    &#10024;<b>line-height</b>: 1.5.<br><br>
+                    &#10024;<b>font-family </b>: «Helvetica Neue», Helvetica, Arial, sans-serif.<br><br>
+                    &#10024;<b>Margin</b>: Los elementos parrafo tienen margin-top: 0 y margin-bottom: 1rem<br><br>
+                    &#10024;<b>Encabezados</b>: Del h1-h6. Los diseños de encabezados en Bootstrap son diferentes a los
+                    de
+                    HTML, siendo estos últimos ligeramente más pequeños.<br><br><br>
+
+                    <h1>H1, semibold 36px</h1><br>
+                    <h2>H2, semibold 30px</h2><br>
+                    <h3>H3, semibold 24px</h3><br>
+                    <h4>H4, semibold 18px</h4><br>
+                    <h5>H5, semibold 14px</h5><br>
+                    <h6>H6, semibold 12px</h6><br><br>
+                    <h3>Otros elementos de Bootstrap</h3>
+                    <b>mark</b><br>
+                    A este elemento de marcación, Bootstrap le añade un diseño tipo resaltado con rotulador.<br>
+                    Esto es una prueba de <mark>mark</mark>.<br><br>
+                    <b>abbr</b><br>
+                    Este elemento que sirve para añadir significado a las abreviaciones. Bootstrap le añade un
+                    subrayado especial para que se vea que esconde ese texto explicativo.<br>
+                    <abbr title="Desarrollo de Aplicaciones Web">DAW</abbr> es un grado superior.<br><br>
+                    <b>code</b><br>
+                    Esta etiqueta se usa para hacer referencia a códigos reservados. Bootstrap lo presenta con otro
+                    color.<br>
+                    Esto es un <code>code</code><br><br>
+                    <b>kbd</b><br>
+                    En HTML se usa para identificar comandos de teclado o formulas, se presentan con un color de
+                    fondo negro sobre letra en blanco.<br>
+                    Esto es <kbd>kbd + Y</kbd><br><br>
+                    <b>dl, dt, dd</b><br>
+                    Estas etiquetas son para definir definiciones de términos. Bootstrap resalta la palabra que
+                    luego se
+                    define.<br>
+                    <dl>
+                        <dt>Bootstrap</dt>
+                        <dd>- Es un FrameWork.</dd>
+                    </dl>
+                    <b>small</b><br>
+                    En Boostrap se usa para crear un titular más pequeño debajo del encabezado.
+                    <h3>SMALL <small class="lead">Prueba small</small></h3><br>
+                    <b>blackquote</b><br>
+                    Esta etiqueta se usa para cuando introducimos un texto copiado de otra fuente. Bootstrap añade a la
+                    etiqueta footer un diseño tipo para señalar que la fuente es otro.
+                    <blockquote>
+                        Este es un texto de prueba.
+                        <footer class="blockquote-footer">Otro tipo de fuente</footer>
+                    </blockquote><br><br>
+
+                    <h3>Etiquetas de tipografía</h3>
+
+                    &#10024;<b>.font-weight-bold, .font-weight-normal, .font-weight-light</b>. Permite añadir grosor a
+                    la fuente.<br><br>
+
+                    &#10024;<b>.font-italic Italica</b>. Añade cursiva.<br><br>
+
+                    &#10024;<b>.lead</b>. Destaca el elemento con una fuente un poco más grande.<br><br>
+
+                    &#10024;<b>.small</b>. Añade una fuente más pequeña.<br><br>
+
+                    &#10024;<b>.small</b>. Etiquetas para alinear el texto dentro de un bloque.<br><br>
+
+                    &#10024;<b>.text-lowercase, .text-uppercase, .text-capitalize</b>. Estos atributos permiten hacer
+                    que el texto sea todo minúsculas, mayúsculas, o que todas las palabras empiecen por
+                    mayúsculas.<br><br>
+
+                    &#10024;<b>.list-unstyled</b>. Quita el list-style y margin-left en elementos de lista ul u
+                    ol.<br><br>
+
+                    &#10024;<b>.list-inline</b>. Coloca los elementos li de una lista en una línea horizontal.<br><br>
+                    <div>
+                        <h4>Código fuente</h4>
+                        <pre><code>
+                            &lt;h1&gt;H1, semibold 36px&lt;/h1&gt;
+                            &lt;h2&gt;H2, semibold 30px&lt;/h2&gt;
+                            &lt;h3&gt;H3, semibold 24px&lt;/h3&gt;
+                            &lt;h4&gt;H4, semibold 18px&lt;/h4&gt;
+                            &lt;h5&gt;H5, semibold 14px&lt;/h5&gt;
+                            &lt;h6&gt;H6, semibold 12px&lt;/h6&gt;
+
+                            Esto es una prueba de &lt;mark&gt;mark&lt;/mark&gt;<br>
+                            &lt;abbr&gt; title="Desarrollo de Aplicaciones Web"&gt;DAW&lt;/abbr&gt; es un grado superior.<br>
+                            Esto es un &lt;code&gt;code&lt;/code&gt;<br>
+                            Esto es &lt;kbd&gt;kbd + Y&lt;/kbd&gt;<br>
+                            &lt;dl&gt;
+                                &lt;dt&gt;Bootstrap&lt;/dt&gt;
+                                &lt;dd&gt;- Es un FrameWork.&lt;/dd&gt;
+                            &lt;/dl&gt;<br>
+                            &lt;h3&gt;SMALL&lt;small class="lead"&gt;Prueba small&lt;/small&gt;&lt;/h3&gt;<br>
+                            &lt;blockquote&gt;
+                                Este es un texto de prueba.
+                                &lt;footer class="blockquote-footer"&gt;Otro tipo de fuente&lt;/footer&gt;
+                            &lt;/blockquote&gt;<br><br>
+                        </code></pre>
+                    </div>
+                </section>
+            </div>
+
+            <div class="ej3">
+                <section id="ej3">
+                    <h2>Jumbotron</h2><br>
+                    <p>El Jumbotron es una clase que facilita la creación de bloques con un fondo diferente,
+                        pensados para llamar la atención y muy útiles
+                        para crear cabeceras o separar contenido dentro de una estructura. Se añade la etiqueta
+                        <code>jumbotron</code>. Si se quiere que el
+                        texto dentro del bloque ocupe el 100% se añade <code>jumbotron-fluid</code>, además quita el
+                        redondeado de la
+                        clase jumbotron.
+                    <div class="alumno1container">
+                        <div class="jumbotron">
+                            <div class="container">
+                                <h1>Funcionamiento del Jumbotron</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p><a class="btn btn-primary btn-lg" role="button">Leer más</a></p><br><br>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Código fuente</h4>
+                            <pre><code>
+                                &lt;div class="jumbotron"&gt;
+                                &lt;div class="container"&gt;
+                                        &lt;h1&gt;Funcionamiento del Jumbotron&lt;h1&gt;;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                      &lt;p&gt;&lt;a&gt; class="btn btn-primary btn-lg" role="button"&gt;Leer más&lt;/a&gt;&lt;/p&gt;
+                                      &lt;/div&gt;
+                            </pre></code>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="datos">
+            <address>
+                Clase de 2º de DAW
+                <br />
+                IES Tetuán de las Victorias
+                <br />
+                Dirección postal: Calle de la Vía Límite, Madrid
+                <br />
+            </address>
+            &reg; Reservados todos los derechos. &reg;
+        </div>
+        <div class="sello">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </div>
+    </footer>
+    <script src="./JS/scripts.js"></script>
+</body>
+
+</html>
